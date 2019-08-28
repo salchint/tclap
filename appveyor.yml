@@ -30,7 +30,7 @@ after_test:
   - ps: Compress-Archive -Force -Path include -DestinationPath tclap-include_$env:APPVEYOR_BUILD_VERSION.zip
 
 artifacts:
-  - path: tclap-include_$env:APPVEYOR_BUILD_VERSION.zip
+  - path: tclap-include_{version}.zip
 
 deploy:
   - provider: BinTray
