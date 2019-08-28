@@ -36,10 +36,11 @@ deploy:
   - provider: BinTray
     username: salchint
     api_key:
-      secure: 9f3c60e5f98c85b2c0b8b94ddd206698df4a2dec
+      secure: e+XJ/CLKhXIFu9dxngMS1D2L1T+mSCHecvIV/O/2Sb0LCMBWer7zGDsTZFFqyIey
     subject: salchint
     repo: tclap
     package: tclap
     artifact: /.*\.zip/
     publish: true
     override: true
+
