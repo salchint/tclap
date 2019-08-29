@@ -15,7 +15,7 @@ platform:
 
 install:
   - ps:
-      Start-FileDownload 'https://github.com/danmar/cppcheck/releases/download/1.88/cppcheck-1.88-x64-Setup.msi'
+      Start-FileDownload 'https://github.com/danmar/cppcheck/releases/download/1.88/cppcheck-1.88-x64-Setup.msi';
       msiexec /passive /i cppcheck-1.88-x64-Setup.msi
 
 before_build:
