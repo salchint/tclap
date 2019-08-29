@@ -91,6 +91,12 @@
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
       <TargetMachine>MachineX86</TargetMachine>
     </Link>
+    <PostBuildEvent>
+      <Command>set CPPCHECK="C:\Program Files\Cppcheck\cppcheck.exe"
+if not exist %CPPCHECK% goto :END
+%CPPCHECK% --quiet --verbose --enable=all --template=vs -I ..\..\include ..\..\examples\test1.cpp
+:END</Command>
+    </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="..\..\examples\test1.cpp" />
